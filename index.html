@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exhiblizztion.</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" type="image/x-icon" href="blizz.png">
+</head>
+
+<body>
+  <section>
+    <header>
+      <a href="#" class="logo">Exhi<span>blizz</span>tion.</a>
+      <div class="toggle" onclick="menuToggle();"></div>
+    </header>
+    <div class="glass"></div><div class="glass2"></div>
+    <div class="content">
+      <h2>Keeping<br><span>Ahead</span></h2>
+    </div>
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;" preload="auto" src="wave.mp4">></video>
+    <ul class="sci">
+      <li style="--i:1"><a href="https://huggingface.co/Blizzchor" target="_blank">HuggingFace</a></li>
+      <li style="--i:2"><a href="https://discord.gg/cKUKUwCRR4" target="_blank">Discord</a></li>
+      <li style="--i:3"><a href="https://www.pexels.com/videos/" target="_blank">Source</a></li>
+    </ul>
+    <ul class="navigation">
+      <li style="--i:1;"><a href="https://replit.com/@TheBlizzchor/Exhiblizztion#about.html">About</a></li>
+      <li style="--i:2;"><a href="#">Team page</a></li>
+      <li style="--i:3;"><a href="#">ChatBot page</a></li>
+      <li style="--i:4;"><a href="#">Document page</a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function menuToggle(){
+      const toggleMenu = document.querySelector('.toggle');
+      const section = document.querySelector('section');
+      toggleMenu.classList.toggle('active');
+      section.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
